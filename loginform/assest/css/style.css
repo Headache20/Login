@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); /*importing fonts from web*/
+
+:root
+{
+    --color-red : #F84545;
+    --color-white : #ffffff;
+    --color-dark : #242323;
+    --color-lightdark : #373636;
+}
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body
+{   
+    width:100%;
+    height:100%;
+    background-color: var(--color-dark);
+}
+
+#wrapper
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100% !important;
+    max-width:100% !important;
+    height:100%;
+}
+
+#container
+{
+    position: relative;
+    width:600px !important;
+    overflow: hidden;
+}
+
+
+#container > .form-heading
+{
+    width:210px;
+    font-family: 'Roboto',sans-serif;
+    font-weight:500;
+    font-size:30px;
+    color: var(--color-white);
+    position: relative !important;
+    margin:20px 0;
+    padding-bottom: 10px;
+}
+
+.form-heading::after
+{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:55%;
+    height:8px;
+    background-color:var(--color-red);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.user-form
+{
+    width:100%;
+}
+
+.user-form > .parent-folder
+{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.parent-folder > .input-controller
+{
+    flex-grow: 1;
+}
+
+.parent-folder > .input-controller:nth-child(1)
+{
+    margin-right:20px;
+}
+
+.parent-folder > .input-controller > label
+{
+    display: block;
+    margin-bottom:10px;
+    font-family: 'Roboto',sans-serif;
+    font-weight:300;
+    text-transform: capitalize;
+    color: var(--color-white);
+    font-size:15px;
+}
+
+.parent-folder > .input-controller > .data-field
+{
+    width:100%;
+    height:35px;
+    border:none;
+    outline:none;
+    background-color: #373636;
+    padding:0 10px;
+    font-family: 'Roboto',sans-serif;
+    font-weight:500;
+    color: var(--color-white);
+}
+
+.input-controller
+{
+    width:100%;
+    margin:20px 0;
+}
+
+.input-controller > label
+{
+    display:block;
+    margin-bottom:10px;
+    font-family: 'Roboto',sans-serif;
+    font-size:15px;
+    color: var(--color-white);
+    font-weight:300;
+}
+
+.input-controller > .data-field
+{
+    width:100%;
+    height:35px;
+    border:none;
+    outline:none;
+    background-color:var(--color-lightdark);
+    padding:0 10px;
+    font-family: 'Roboto',sans-serif;
+    font-weight:500;
+    color: var(--color-white);
+}
+
+.input-controller > .register-user
+{
+    display:block;
+    margin:50px auto;
+    width:200px;
+    height:60px;
+    border:none;
+    outline:none;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-weight:700;
+    font-family: 'Roboto',sans-serif;
+    font-size:22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius:30px;
+    box-shadow: 0px 0px 5px var(--color-red);
+    cursor: pointer;
+}
+
+
+
+#errorbox
+{
+    width:250px;
+    height:50px;
+    line-height: 50px;
+    background:var(--color-white);
+    margin-left:200px;
+    position: absolute;
+    top:-100%;
+    right:0;
+    border-radius: 10px;
+    background-color: #f55757;
+    color: var(--color-dark);
+    font-weight:700;
+    letter-spacing: 1px;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    font-size:13px;
+    animation: errorhandl 2s ease-in-out alternate-reverse;
+}
+
+@keyframes errorhandl
+{
+    0%
+    {
+        top:0;
+    }
+
+    10%
+    {
+        top:0;
+    }
+
+    20%
+    {
+        top:0;
+    }
+
+
+    30%
+    {
+        top:0;
+    }
+
+    40%
+    {
+        top:0;
+    }
+
+    50%
+    {
+        top:0;
+    }
+
+    60%
+    {
+        top:0;
+    }
+
+    70%
+    {
+        top:0;
+    }
+
+    80%
+    {top:0;}
+
+    90%
+    {
+        top:-100%;
+    }
+
+    100%
+    {
+        top:-100%;
+    }
+}
+
+.login-link
+{
+    text-align:center;
+    font-family: 'Roboto',sans-serif;
+    color: #fff;
+}
+
+.login-link > a
+{
+    text-decoration: none;
+    color: var(--color-red);
+    font-weight:500;
+}
